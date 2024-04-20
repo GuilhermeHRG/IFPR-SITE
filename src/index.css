@@ -1,0 +1,116 @@
+/*REPONSIVIDADE FONTES MOBILE*/
+:root {
+    /* COLORS */
+    --ruby: #cd191e;
+    --emerald: #00a858;
+    --white: #fff;
+    --black: #000;
+    --silver: #ddd;
+/* FONT SIZE */
+    --h1-font-size: 2rem;
+    /* 32px */
+    --h2-font-size: 1.5rem;
+    /* 24px */
+    --h3-font-size: 1.25rem;
+    /* 20px */
+    --h4-font-size: 1.125rem;
+    /* 18px */
+    --font-size-normal: 1rem;
+    /* 16px */
+/* FONT WEIGHT */
+    --font-normal: 300;
+    --font-medium: 500;
+    --font-bold: 700;
+
+}
+/*GLOBAL*/
+* {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: var(--white);
+    font-size: var(--font-size-normal);
+    min-height: 100dvh;
+
+}
+
+::selection {
+    background-color: var(--emerald);
+    color: var(--white);
+}
+
+h1 {
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-bold);
+}
+
+h2 {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-bold);
+}
+
+h3 {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
+
+h4 {
+    font-size: var(--h4-font-size);
+    font-weight: var(--font-medium);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+button {
+    background-color: var(--ruby);
+    color: var(--white);
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    border: none;
+}
+
+button:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+/*REPONSIVIDADE FONTES TABLET*/
+@media screen and (min-width: 768px) {
+    :root {
+        --h1-font-size: 3rem;
+        /* 40px */
+        --h2-font-size: 2.25rem;
+        /* 32px */
+        --h3-font-size: 1.8rem;
+        /* 28px */
+        --h4-font-size: 1.25rem;
+        /* 24px */
+        --font-normal: 1rem;
+    }
+}
+/*REPONSIVIDADE FONTES DESKTOP*/
+@media screen and (min-width: 1024px) {
+    :root {
+        --h1-font-size: 3.25rem;
+        /* 40px */
+        --h2-font-size: 2.5rem;
+        /* 32px */
+        --h3-font-size: 1.8rem;
+        /* 28px */
+        --h4-font-size: 1.25rem;
+        /* 24px */
+        --font-normal: 1rem;
+    }
+}
