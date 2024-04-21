@@ -1,25 +1,27 @@
-body{
-    display: flex;
-    margin: 0;
-}
 .title{
     display: flex;
-    margin-top: 20px;
     justify-content: center;
     align-items: center;
+    
+}
+.main{
+    background-color: #00A858;
+    color: aliceblue;
+    padding: 4px;
+    
 }
 .logosParceiros{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 4px;
-    gap: 20px;
+    padding: 8px;
+    gap: 43px;
     width: 100%;
     height: auto;
-    background-color: rgb(233, 231, 231);
 }
-img{
-    width: 220px;
-    height: 220px;
+.logosParceiros img{
+    width: 5rem;
+    height: auto;
     border-radius: 8px;
+    box-shadow: rgb(2, 76, 36) 4px 5px;
 }
