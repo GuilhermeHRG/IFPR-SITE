@@ -154,11 +154,3 @@ button:hover {
         /* Equivalente a ~18px */
     }
 }
-
-/* Explicação do conceito de "first mobile":
-   Esse aquirvo CSS foi pensado para ser usado em um modelo de design que prioriza a experiência do usuário em dispositivos móveis, 
-   como smartphones. A abordagem "first mobile" considera que a maioria dos usuários acessa inicialmente sites por meio de 
-   dispositivos móveis. Assim, o design inicial é otimizado para esses dispositivos, levando em conta suas restrições de 
-   tela e interação do usuário. Em seguida, o design é escalado e adaptado para dispositivos maiores, como tablets e desktops, 
-   garantindo uma experiência consistente em todas as plataformas. 
-   */
