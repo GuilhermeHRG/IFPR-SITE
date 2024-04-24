@@ -3,30 +3,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100dvh;
+    min-height: 110dvh;
     min-width: 100%;
-    padding: 5% 10%;
+    padding: 5% 10%; 
     gap: 2rem;
-
     background-size: cover;
-    background-position: center;
+    background-position: auto;
     background-repeat: no-repeat;
     background-image: url(../../assets/images/bgWorkshop.svg);
 }
 
-/* .mainWork {
-    max-width: 100%;
-    background-image: url(../../assets/images/bgWrkshop.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    object-fit: contain;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 20px;
-} */
+
 
 .mainWork .title {
     color: var(--black);
@@ -35,14 +22,14 @@
 .card1, .card2 {
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
-    height: 8rem;
-    width: 10rem;
+    height: auto;
+    max-width: 25%;
+    padding: 10px;
 }
 
 .card1 img, .card2 img {
-    border-top-right-radius: 1rem;
-    border-top-left-radius: 1rem;
-    box-shadow: #00A858 2px 0px 5px 2px;
+    border-radius: 8px 8px;
+    max-height: 60%;
 }
 
 .descWork {
@@ -51,33 +38,30 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 5px;
-    background-color: #f3f3f3;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    padding: 4px;
-    box-shadow: #00A858 2.5px 4px 5px 1.5px;
+    height: auto;
+    background-color: var(--gray);
+    border-radius: 0 0 8px 8px;
+    padding: 16px;
 }
 
 .oficinas {
     display: flex;
+    justify-content: center;
     gap: 20px;
 }
 
-/* MOBILE */
-@media (max-width: 768px) {
-    .mainWork {
-        padding: 10px; 
-    }
 
+ @media (max-width: 768px) {
     .oficinas {
         flex-direction: column;
         align-items: center;
     }
-
-    .card1, .card2 {
+    .descWork p{
+        text-align: left;
         width: 100%;
-        max-width: 200px;
-        margin-bottom: 200px;
+        font-size: 12px;
     }
-}
+    .card1, .card2 {
+        min-width: 100%;
+    }
+} 
