@@ -1,0 +1,15 @@
+/* FIRST MOBILE */
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5% 10%;
+    min-height: 25dvh;
+}
+
+/* RESPONSIVE FOR TABLET AND DESKTOP */
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1024px) {}
+
+@media screen and (min-width: 1440px) {}

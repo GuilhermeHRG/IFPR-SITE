@@ -1,0 +1,92 @@
+/* FIRST MOBILE */
+.headerContainer {
+    display: flex;
+}
+
+.navMenuContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    min-width: 100%;
+}
+
+.navLogo,
+.navMenu,
+.navSign,
+.navMenuHamburger {
+    display: flex;
+    flex: 1;
+}
+
+.navLogo {
+    justify-content: flex-start;
+}
+
+.navMenu {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navMenu .item {
+    font-weight: var(--font-medium);
+}
+
+.navMenu .item:hover {
+    color: var(--red);
+    transition: color .8;
+}
+
+.navSign {
+    justify-content: flex-end;
+}
+
+.navMenuHamburger {
+    justify-content: flex-end;
+}
+
+.navMenu,
+.navSign {
+    display: none;
+}
+
+/* RESPONSIVE FOR TABLET AND DESKTOP */
+@media screen and (min-width: 768px) {
+    .navMenu {
+        display: flex;
+    }
+
+    .navMenuHamburger {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .navMenu {
+        display: flex;
+    }
+
+    .navSign {
+        display: flex;
+    }
+
+    .navMenuHamburger {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .navMenu {
+        display: flex;
+    }
+
+    .navSign {
+        display: flex;
+    }
+
+    .navMenuHamburger {
+        display: none;
+    }
+}

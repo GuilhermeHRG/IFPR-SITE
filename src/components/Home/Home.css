@@ -1,0 +1,51 @@
+/* FIRST MOBILE */
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100dvh;
+    min-width: 100%;
+    padding: 5% 10%;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../../assets/images/bgHome.svg");
+}
+
+.homeContainer > aside {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 75%;
+    gap: 1rem;
+}
+
+.homeContainer > aside h1 {
+    color: var(--white);
+}
+
+.homeContainer > aside p {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-bold);
+    color: var(--white);
+}
+
+/* RESPONSIVE FOR TABLET AND DESKTOP */
+@media screen and (min-width: 768px) {
+    .homeContainer > aside {
+        max-width: 65%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .homeContainer > aside {
+        max-width: 55%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .homeContainer > aside {
+        max-width: 55%;
+    }
+}
