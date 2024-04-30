@@ -50,8 +50,12 @@
     gap: 20px;
 }
 
+/* MOBILE */
+@media (max-width: 768px) {
+    .mainWork {
+        padding: 10px; 
+    }
 
- @media (max-width: 768px) {
     .oficinas {
         flex-direction: column;
         align-items: center;
